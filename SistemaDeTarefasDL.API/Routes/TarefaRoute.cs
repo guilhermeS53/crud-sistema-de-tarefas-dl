@@ -30,7 +30,7 @@ public static class TarefaRoute
             
             tarefa.Titulo = tarefaAtualizada.Titulo;
             tarefa.Descricao = tarefaAtualizada.Descricao;
-            tarefa.DataConclusao = tarefaAtualizada.DataConclusao;
+            tarefa.Status = tarefaAtualizada.Status;
             
             await context.SaveChangesAsync();
             return Results.Ok(tarefa);
