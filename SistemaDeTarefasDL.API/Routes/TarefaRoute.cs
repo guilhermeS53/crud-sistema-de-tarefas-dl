@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Serilog.Core;
 using SistemaDeTarefasDL.API.Data;
 using SistemaDeTarefasDL.API.Models;
 
@@ -18,6 +20,11 @@ public static class TarefaRoute
         
         app.MapPost("/tarefas", async (TarefaModel tarefa, AppDbContext context) =>
         {
+            if (tarefa.Status == 0)
+            {
+                tarefa.Status = TarefaModel.StatusTarefa.Pendente;
+            }
+            
             context.Tarefas.Add(tarefa);
             await context.SaveChangesAsync();
             return Results.Created($"/tarefas/{tarefa.Id}", tarefa);
@@ -25,15 +32,21 @@ public static class TarefaRoute
         
         app.MapPut("/tarefas/{id:guid}", async (Guid id, TarefaModel tarefaAtualizada, AppDbContext context) =>
         {
-            var tarefa = await context.Tarefas.FindAsync(id);
-            if (tarefa is null) return Results.NotFound();
+            
+                var tarefa = await context.Tarefas.FindAsync(id);
+                if (tarefa is null)
+                {
+                    return Results.NotFound();
+                }
             
             tarefa.Titulo = tarefaAtualizada.Titulo;
             tarefa.Descricao = tarefaAtualizada.Descricao;
             tarefa.Status = tarefaAtualizada.Status;
-            
+            tarefa.DataCriacao = tarefaAtualizada.DataCriacao;
+
             await context.SaveChangesAsync();
             return Results.Ok(tarefa);
+            
         });
         
         app.MapDelete("/tarefas/{id:guid}", async (Guid id, AppDbContext context) =>

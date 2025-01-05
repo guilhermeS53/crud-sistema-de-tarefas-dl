@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/guilherme.sousa/Projects/SistemaDeTarefasDL/SistemaDeTarefasDL/SistemaDeTarefasDL.API/SistemaDeTarefasDL.API.csproj": {}
+    "C:\\Users\\Guilherme\\Documents\\Projects\\Projeto-DL-2025\\crud-sistema-de-tarefas-dl\\SistemaDeTarefasDL.API\\SistemaDeTarefasDL.API.csproj": {}
   },
   "projects": {
-    "/Users/guilherme.sousa/Projects/SistemaDeTarefasDL/SistemaDeTarefasDL/SistemaDeTarefasDL.API/SistemaDeTarefasDL.API.csproj": {
+    "C:\\Users\\Guilherme\\Documents\\Projects\\Projeto-DL-2025\\crud-sistema-de-tarefas-dl\\SistemaDeTarefasDL.API\\SistemaDeTarefasDL.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guilherme.sousa/Projects/SistemaDeTarefasDL/SistemaDeTarefasDL/SistemaDeTarefasDL.API/SistemaDeTarefasDL.API.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\Projects\\Projeto-DL-2025\\crud-sistema-de-tarefas-dl\\SistemaDeTarefasDL.API\\SistemaDeTarefasDL.API.csproj",
         "projectName": "SistemaDeTarefasDL.API",
-        "projectPath": "/Users/guilherme.sousa/Projects/SistemaDeTarefasDL/SistemaDeTarefasDL/SistemaDeTarefasDL.API/SistemaDeTarefasDL.API.csproj",
-        "packagesPath": "/Users/guilherme.sousa/.nuget/packages/",
-        "outputPath": "/Users/guilherme.sousa/Projects/SistemaDeTarefasDL/SistemaDeTarefasDL/SistemaDeTarefasDL.API/obj/",
+        "projectPath": "C:\\Users\\Guilherme\\Documents\\Projects\\Projeto-DL-2025\\crud-sistema-de-tarefas-dl\\SistemaDeTarefasDL.API\\SistemaDeTarefasDL.API.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Guilherme\\Documents\\Projects\\Projeto-DL-2025\\crud-sistema-de-tarefas-dl\\SistemaDeTarefasDL.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/guilherme.sousa/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +67,10 @@
               "target": "Package",
               "version": "[8.0.10, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -85,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
