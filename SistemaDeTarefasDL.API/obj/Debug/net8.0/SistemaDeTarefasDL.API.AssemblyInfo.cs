@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaDeTarefasDL.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+592198ed522ffcb845fe702c310dc7bbff8ec651")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1179201f7c68fd7da3a9ae8e3e9be68f25017858")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaDeTarefasDL.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaDeTarefasDL.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

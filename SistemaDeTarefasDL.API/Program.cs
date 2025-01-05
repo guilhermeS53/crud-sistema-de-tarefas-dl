@@ -7,6 +7,16 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin();
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -29,6 +39,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.TarefaRoutes(); // Definem as rotas de: GET, POST, PUT, DELETE 
+
+app.UseCors("AllowAllOrigins");
 
 app.UseHttpsRedirection();
 app.Run();
