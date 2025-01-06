@@ -96,3 +96,11 @@ ou
   "status": "Concluido"
 }
 ```
+ou
+```json
+{
+  "titulo": "Tarefa Teste Atualizada",
+  "descricao": "Nova Descrição Teste",
+  "status": 2
+}
+```
