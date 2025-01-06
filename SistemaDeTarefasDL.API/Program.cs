@@ -50,13 +50,13 @@ void InicializarBancoDeDados(IServiceProvider services)
     using var scope = services.CreateScope();
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-    context.Tarefas.Add(new TarefaModel("Aprender EF Core InMemory", 
-        "Estudo sobre bancos em memória", 
+    context.Tarefas.Add(new TarefaModel("Aprender EF Core InMemory",
+        "Estudo sobre bancos em memória",
         TarefaModel.StatusTarefa.Pendente));
-    context.Tarefas.Add(new TarefaModel("Correr no Parque", 
-        "Correr por 30 minutos em Trindade", 
+    context.Tarefas.Add(new TarefaModel("Correr no Parque",
+        "Correr por 30 minutos em Trindade",
         TarefaModel.StatusTarefa.EmAndamento));
-    
+
     context.SaveChanges();
 
     Console.WriteLine("Banco de dados iniciando as tarefas abaixo: ");
